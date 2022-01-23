@@ -147,5 +147,50 @@ all(ints>0)
 1
 1
 9
-Sys.Date()
-mean(c(2,4,5))
+remainder(5)
+remainder(11,5)
+remainder(divisor=11,num=5)
+remainder(4,divisor=2)
+args(remainder)
+#Sys.Date()
+#mean(c(2,4,5))
+evaluate(sd, c(1.4,3.6,7.9, 8.8))
+evaluate(function(x){x+1}, 6)
+evaluate(function(x){x[1]},c(8,4,0))
+evaluate(function(x){x[length(x)]}, c(8,4,0))
+?paste
+paste("Programming", "is", "fun!")
+paste("START",...,"STOP")
+telegram()
+args<-list(...)
+place<-args["place"]
+adjective<-args["adjective"]
+noun<-args["noun"]
+mad_libs(place="",adjective="", noun="")
+paste(left,right)
+"I" %p% "love" %p% "R!"
+2
+1
+15
+data(cars)
+help()
+?cars
+head(cars)
+plot(cars)
+?plot
+plot(x=cars$speed, y=cars$dist)
+plot(x=cars$dist, y=cars$speed)
+plot(x=cars$speed, y=cars$dist, xlab="Speed")
+plot(x=cars$speed, y=cars$dist, ylab="Stopping Distance")
+plot(x=cars$speed, y=cars$dist, xlab="Speed", ylab="Stopping Distance")
+plot(cars,main="My Plot")
+plot(cars, sub="My Plot Subtitle")
+plot(cars, col=2)
+plot(cars, xlim=c(10,15))
+plot(cars, pch=2)
+data(mtcars)
+?boxplot
+boxplot(formula=mpg~cyl, data=mtcars)
+hist(mtcars$mpg)
+1
+1
