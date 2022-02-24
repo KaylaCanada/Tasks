@@ -1,18 +1,16 @@
-install.packages("learnPopGen")
+#install.packages("learnPopGen")
 library(learnPopGen)
+library(coala)
 coalescent.plot()
-install.packages("coala")
-install.packages("rehh", dep=T)
-install.packages("assertthat", dep=T)
-install.packages("https://cran.r-project.org/src/contrib/Archive/scrm/scrm_1.7.3-1.tar.gz", repos=NULL, type="source")
-install.packages("https://cran.r-project.org/src/contrib/Archive/coala/coala_0.6.0.tar.gz", repos=NULL, type="source")
+
+library(coala)
+
 model<-coal_model(sample_size=5, loci_number=10, loci_length=500, ploidy=2)+
   feat_mutation(10)+
   feat_recombination(10)+
   sumstat_trees()+
   sumstat_nucleotide_div()
-library(coala)
-install.packages("phytools")
+
 library(phytools)
 stats<-simulate(model, nsim=1)
 Diversity<-stats$pi
@@ -59,3 +57,4 @@ plot(theta)
 x<-mean_pi
 y<-theta
 plot(mean_pi, theta)
+
