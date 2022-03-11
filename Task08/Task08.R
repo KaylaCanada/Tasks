@@ -40,7 +40,7 @@ AnolisTree2<-drop.tip(AnolisTree, "Anolis_occultus")
 plot(AnolisTree2, cex=0.25)
 ltt(AnolisTree)
 abline(0, 1, lwd=2, col='red', lty=2)
-#Question 9: The slope on the graph does not appear to ever go down. I believe this to be because population of the Anolis lizards are reproducing without signs extinction. 
+#Question 9: The slope on the graph does not appear to ever go down. I believe this to be because population of the Anolis lizards are reproducing without signs of stopping which creates more divergences from the common ancestor (more nodes created/ as the slope increases you can see the black line (stairs) get closer and shorter which i believe to be the creation of more species)
 #Question 10: Rate Is on line 46
 fit.bd(AnolisTree, b, d, rho=0.2)
 (b/lambda=0.8031), (d/mu=0),and log(L)=132.9163
